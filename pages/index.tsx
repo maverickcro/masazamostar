@@ -3,6 +3,11 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Masaza Mostar by Lorenzo - Relax i Sportska Masaza",
+  description: "Masaza Mostar by Lorenzo - Relax i Sportska Masaza",
+};
+
 export default function Home() {
   return (
     <main

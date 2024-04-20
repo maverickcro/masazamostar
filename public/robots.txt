@@ -1,0 +1,6 @@
+User-agent: Googlebot
+
+User-agent: *
+Allow: /
+Sitemap: https://masaza-mostar.com//sitemap.xml
+Host: https://masaza-mostar.com/
