@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
+import Hero from "./components/Hero";
+import Usluge from "./components/Usluge";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,10 +11,19 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      Hello
+    <main className={`mx-auto ${inter.className}`}>
+      <section className="one" id="nula">
+        <Hero />
+      </section>
+      <section className="two" id="jedan">
+        <Usluge />
+      </section>
+      <section className="three" id="dva">
+        <h1>Cjenik?</h1>
+      </section>
+      <section className="four" id="tri">
+        <h1>Kontakt?</h1>
+      </section>
     </main>
   );
 }
