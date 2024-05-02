@@ -47,7 +47,10 @@ section {
   background-repeat: no-repeat;
 }
 .two {
-  background: linear-gradient(#e66465, #9198e5);
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .three {
   background: rgb(67, 91, 175);
@@ -84,4 +87,12 @@ section {
   z-index: 0;
   background: linear-gradient(#e66465, #9198e5);
   border-radius: 25px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Omogućava prelazak kartica u novi red */
+  gap: 20px; /* Postavlja razmak između kartica */
+  justify-content: space-around; /* Raspoređuje kartice ravnomjerno */
+  align-items: stretch; /* Rasteže sve kartice kako bi imale istu visinu */
 }
