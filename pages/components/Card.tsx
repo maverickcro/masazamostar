@@ -11,8 +11,9 @@ export default function Card(props: any) {
           className="rounded-t-lg"
           src={`/${props.src}`}
           alt={props.alt}
-          layout="fill"
-          style={{ objectFit: "cover" }}
+          width={350}
+          height={350}
+          style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />
       </div>
       <div className="p-5">
