@@ -18,12 +18,12 @@ export default function Home() {
       <section className="two" id="jedan">
         <Usluge />
       </section>
-      <section className="three" id="dva">
+      {/* <section className="three" id="dva">
         <h1>Cjenik?</h1>
       </section>
       <section className="four" id="tri">
         <h1>Kontakt?</h1>
-      </section>
+      </section> */}
     </main>
   );
 }

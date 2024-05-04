@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Card(props: any) {
   return (
     <div
-      className="max-w-sm bg-white border border-black rounded-xl shadow-md dark:bg-gray-800 dark:border-gray-700"
+      className="card-shadow max-w-sm bg-white"
       style={{ height: "100%", overflow: "hidden" }}
     >
       <div className="relative w-full" style={{ height: "350px" }}>
