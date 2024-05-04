@@ -23,7 +23,7 @@ export default function About() {
             alt="Lorenco"
             height={350}
             width={350}
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             className="rounded-lg"
           />
         </div>

@@ -6,13 +6,13 @@ export default function Card(props: any) {
       className="card-shadow max-w-sm bg-white"
       style={{ height: "100%", overflow: "hidden" }}
     >
-      <div className="relative w-full" style={{ height: "350px" }}>
+      <div className="relative w-full" style={{ height: "250px" }}>
         <Image
           className="rounded-t-lg"
           src={`/${props.src}`}
           alt={props.alt}
           layout="fill"
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className="p-5">

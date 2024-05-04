@@ -75,7 +75,18 @@ export default function Navbar() {
           >
             Usluge
           </Link>
-          {/* <ToggleMode /> */}
+          <Link
+            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
+            href="#cjenik"
+          >
+            Cjenik
+          </Link>
+          <Link
+            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
+            href="#kontakt"
+          >
+            Kontakt
+          </Link>
         </div>
       </div>
     </nav>

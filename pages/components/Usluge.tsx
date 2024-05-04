@@ -6,7 +6,7 @@ import InfoCard from "./InfoCard";
 export default function Usluge() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-20">
+      <div className="flex flex-col justify-center items-center">
         <span className="text-gray-600 font-bold">USLUGE</span>
         <h2 className="text-3xl font-bold my-3 pb-4 bg-gradient-to-r from-[#e66465] to-[#9198e5] bg-[length:60%_6px] bg-no-repeat bg-bottom">
           Koje Masaže Nudim?

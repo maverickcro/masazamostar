@@ -16,15 +16,18 @@ export default function Home() {
       <section className="one" id="masaza">
         <Hero />
       </section>
-      <section className="three" id="o-meni">
+      <section className="two" id="o-meni">
         <About />
       </section>
-      <section className="two" id="usluge">
+      <section className="three" id="usluge">
         <Usluge />
       </section>
-      {/* <section className="four" id="kontakt">
+      <section className="four" id="cjenik">
         <h1>Cjenik?</h1>
-      </section> */}
+      </section>
+      <section className="five" id="kontakt">
+        <h1>Kontakt?</h1>
+      </section>
     </main>
   );
 }

@@ -57,7 +57,7 @@ function InfoCard() {
         želite poboljšati svoje opće stanje, tu sam za vas.
       </p>
       <a
-        href="#jedan"
+        href="#usluge"
         className="card-shadow inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg gradient-pozadina hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
       >
         Usluge
