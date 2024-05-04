@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className="prose max-w-4xl prose-xl mx-auto flex flex-col md:flex-row justify-between items-center h-[100%]">
         <p className="text-3xl font-bold grid mb-0">
           <Link
-            href="#nula"
+            href="#masaza"
             className="logo-animation font-bold text-gradient no-underline"
           >
             Masaža Mostar
@@ -65,21 +65,15 @@ export default function Navbar() {
         <div className="flex flex-row justify-center items-center sm:justify-evenly sm:items-center gap-4 text-base">
           <Link
             className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
-            href="#jedan"
-          >
-            Usluge
-          </Link>
-          <Link
-            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
-            href="#dva"
-          >
-            Cjenik
-          </Link>
-          <Link
-            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
-            href="#tri"
+            href="#o-meni"
           >
             O Meni
+          </Link>
+          <Link
+            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
+            href="#usluge"
+          >
+            Usluge
           </Link>
           {/* <ToggleMode /> */}
         </div>
