@@ -1,6 +1,6 @@
 import Image from "next/image";
 import InfoCard from "./InfoCard";
-import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function About() {
   useScrollAnimation("yearsCounter", 0, 5, 1500);

@@ -22,7 +22,7 @@ const animateValue = (
   window.requestAnimationFrame(step);
 };
 
-export const useScrollAnimation = (
+const useScrollAnimation = (
   id: string,
   start: number,
   end: number,
@@ -46,3 +46,5 @@ export const useScrollAnimation = (
     return () => window.removeEventListener("scroll", onScroll); // Cleanup listener when component unmounts or dependencies change
   }, [id, start, end, duration]);
 };
+
+export default useScrollAnimation;
