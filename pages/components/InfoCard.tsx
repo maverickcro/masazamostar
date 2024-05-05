@@ -1,49 +1,6 @@
-import { useEffect } from "react";
 import React from "react";
 
-const animateValue = (
-  id: string,
-  start: number,
-  end: number,
-  duration: number
-) => {
-  let startTimestamp: number | null = null;
-  const step = (timestamp: number) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    const value = Math.floor(progress * (end - start) + start);
-    const element = document.getElementById(id);
-    if (element) {
-      element.innerHTML = value.toString();
-    }
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-};
-
-const initScrollAnimation = () => {
-  const onScroll = () => {
-    const element = document.getElementById("counter");
-    if (element) {
-      const counterPosition = element.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight;
-
-      if (counterPosition < screenPosition) {
-        animateValue("counter", 0, 5, 1500); // Animate over 2000 milliseconds or 2 seconds
-        window.removeEventListener("scroll", onScroll);
-      }
-    }
-  };
-
-  window.addEventListener("scroll", onScroll);
-};
-
 function InfoCard() {
-  useEffect(() => {
-    initScrollAnimation();
-  }, []);
   return (
     <div className="flex flex-col justify-center items-centerp-[20px] h-full">
       <span className="text-gray-700">Tko sam ja?</span>

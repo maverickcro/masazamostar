@@ -56,7 +56,7 @@ section {
   background-repeat: no-repeat;
 }
 .four {
-  background: lightsalmon;
+  background: #f3f4f9;
 }
 
 .five {
@@ -107,7 +107,6 @@ section {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
   align-items: stretch;

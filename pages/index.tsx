@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Hero from "./components/Hero";
 import Usluge from "./components/Usluge";
 import About from "./components/About";
+import Cjenik from "./components/Cjenik";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function Home() {
         <Usluge />
       </section>
       <section className="four" id="cjenik">
-        <h1>Cjenik?</h1>
+        <Cjenik />
       </section>
       <section className="five" id="kontakt">
         <h1>Kontakt?</h1>

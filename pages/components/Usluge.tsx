@@ -1,7 +1,4 @@
-"use client";
-import Image from "next/image";
 import Card from "./Card";
-import InfoCard from "./InfoCard";
 
 export default function Usluge() {
   return (
@@ -12,7 +9,7 @@ export default function Usluge() {
           Koje Masaže Nudim?
         </h2>
       </div>
-      <div className="grid max-w-[1280px] px-4 pb-8 mx-auto lg:gap-8 py-8 lg:grid-cols-12 flex-container">
+      <div className="grid max-w-[1280px] px-4 pb-8 mx-auto lg:gap-8 py-8 lg:grid-cols-12 flex-container flex-row">
         <div className="lg:col-span-4">
           <Card
             title="Medicinska masaža"
