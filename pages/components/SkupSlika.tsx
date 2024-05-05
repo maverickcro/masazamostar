@@ -10,7 +10,7 @@ export default function SkupSlika() {
           style={{ borderRadius: "16px 16px 0 0" }}
         >
           <Image
-            src="/slika1.jpg"
+            src="/slika4.jpg"
             alt="Counseling Session"
             width={300}
             height={400}
@@ -27,7 +27,7 @@ export default function SkupSlika() {
         >
           <div className="w-20 h-20 mb-2 bg-gradient-to-bl from-[#e66465] to-[#9198e5] rounded-tr-[50px]"></div>
           <Image
-            src="/slika2.jpg"
+            src="/slika5.jpg"
             alt="Professional Advice"
             width={300}
             height={400}
