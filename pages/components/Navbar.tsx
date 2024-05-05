@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 // import ToggleMode from "./ToggleMode";
 
 export default function Navbar() {
@@ -57,32 +58,32 @@ export default function Navbar() {
         <p className="text-3xl font-bold grid mb-0">
           <Link
             href="#masaza"
-            className="logo-animation font-bold text-gradient no-underline"
+            className=" font-bold text-gradient no-underline "
           >
-            Masaža Mostar
+            <Image src="/logo.png" width={150} height={100} alt="logo" />
           </Link>
         </p>
         <div className="flex flex-row justify-center items-center sm:justify-evenly sm:items-center gap-4 text-base">
           <Link
-            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
+            className=" font-bold no-underline text-black text-sm md:text-base gradient-hover-text"
             href="#o-meni"
           >
             O Meni
           </Link>
           <Link
-            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
+            className="transition font-bold no-underline text-black text-sm md:text-base gradient-hover-text"
             href="#usluge"
           >
             Usluge
           </Link>
           <Link
-            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
+            className="transition font-bold no-underline text-black text-sm md:text-base gradient-hover-text"
             href="#cjenik"
           >
             Cjenik
           </Link>
           <Link
-            className="transition logo-animation font-bold no-underline navbar-link text-black dark:text-white text-sm md:text-base"
+            className="transition font-bold no-underline text-black text-sm md:text-base gradient-hover-text"
             href="#kontakt"
           >
             Kontakt

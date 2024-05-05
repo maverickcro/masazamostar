@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect } from "react";
-// import ToggleMode from "./ToggleMode";
+import Image from "next/image";
 
 export default function Footer() {
   const useSmoothScroll = () => {
@@ -35,8 +35,12 @@ export default function Footer() {
   return (
     <footer className="bg-white rounded-lg shadow px-6  m-4">
       <div className="w-full max-w-4xl mx-auto p-4 md:py-8 text-center">
-        <div className="flex text-center justify-center">
-          <Link href="#nula" className="space-x-3 rtl:space-x-reverse">
+        <div className="flex text-center justify-between">
+          <Image src="/logo.png" width={200} height={140} alt="logo" />
+          <Link
+            href="#nula"
+            className="space-x-3 rtl:space-x-reverse my-[auto] mx-0"
+          >
             <span className="text-base font-semibold">
               WEB STRANICA U IZRADI 🛠️
             </span>

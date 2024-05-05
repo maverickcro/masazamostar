@@ -64,15 +64,13 @@ section {
 }
 
 .gradient-pozadina {
-  background: linear-gradient(
-    #e66465,
-    #9198e5
-  ); /* Postavljanje osnovnog linearnog gradijenta */
+  background: linear-gradient(45deg, #cc525d, #6e78ce);
   transition: background-color 0.3s ease;
 }
 
 .gradient-pozadina:hover {
   background: linear-gradient(
+    45deg,
     #cc525d,
     #6e78ce
   ); /* Malo tamniji gradijent za hover */
@@ -103,7 +101,7 @@ section {
   bottom: 40px;
   left: 40px;
   z-index: 0;
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(45deg, #e66465, #9198e5);
   border-radius: 25px;
 }
 
@@ -151,7 +149,7 @@ section {
 }
 
 .stats {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(45deg, #e66465, #9198e5);
   padding: 25px;
   border-radius: 8px;
   text-align: center;
@@ -163,4 +161,21 @@ section {
   display: block;
   font-size: 36px;
   font-weight: bold;
+}
+
+/* text gradient hover */
+
+/* Custom CSS for the text */
+.gradient-hover-text {
+  position: relative;
+  color: black; /* Normal text color */
+  transition: color 0.3s ease; /* Smooth transition for the color change */
+}
+
+.gradient-hover-text:hover {
+  color: transparent; /* Make text color transparent to reveal the gradient on hover */
+  background-image: linear-gradient(45deg, #e66465, #9198e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Necessary for Safari */
 }
