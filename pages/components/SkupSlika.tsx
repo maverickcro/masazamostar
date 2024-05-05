@@ -14,7 +14,7 @@ export default function SkupSlika() {
             alt="Counseling Session"
             width={300}
             height={400}
-            className="rounded-lg"
+            className="rounded-tl-[50px]"
             style={{ objectFit: "cover", width: "100%" }}
           />
           <div className="w-20 h-20 mt-2 bg-gradient-to-tr from-[#e66465] to-[#9198e5] rounded-bl-[50px]"></div>
@@ -31,7 +31,7 @@ export default function SkupSlika() {
             alt="Professional Advice"
             width={300}
             height={400}
-            className="rounded-lg"
+            className="rounded-br-[50px]"
             style={{ objectFit: "cover" }}
           />
         </div>
