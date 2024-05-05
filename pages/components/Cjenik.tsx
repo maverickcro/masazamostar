@@ -100,7 +100,7 @@ export default function Cjenik() {
               </tbody>
             </table>
             <span className="text-sm text-gray-600 italic">
-              *Imam svoj prostor za masažu. U slučaju da želite dolazak na
+              *Imam svoj prostor za masažu. U slučaju da želite da dođedm na
               adresu to se naplaćuje dodatno.
             </span>
             <a
