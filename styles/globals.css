@@ -40,27 +40,18 @@ section {
   /* color: white; */
 }
 
-.one {
-  background-image: url("/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.two {
-  background: #f3f4f9;
-}
-.three {
-  background-image: url("/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.four {
-  background: #f3f4f9;
-}
-
+.one,
+.three,
 .five {
-  background: rebeccapurple;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.two,
+.four,
+.six {
+  background: #f3f4f9;
 }
 
 .gradient-pozadina {

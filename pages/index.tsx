@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Usluge from "./components/Usluge";
 import About from "./components/About";
 import Cjenik from "./components/Cjenik";
+import FAQ from "./components/FAQ";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className={`mx-auto ${inter.className}`}>
-      <section className="one" id="masaza">
+      <section className="one" id="pocetna">
         <Hero />
       </section>
       <section className="two" id="o-meni">
@@ -26,8 +27,11 @@ export default function Home() {
       <section className="four" id="cjenik">
         <Cjenik />
       </section>
-      <section className="five" id="kontakt">
-        <h1>Kontakt?</h1>
+      <section className="five" id="pitanja">
+        <FAQ />
+      </section>
+      <section className="six" id="kontakt">
+        Kontakt?
       </section>
     </main>
   );

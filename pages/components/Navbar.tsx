@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className="prose max-w-4xl prose-xl mx-auto flex flex-col md:flex-row justify-between items-center h-[100%]">
         <p className="text-3xl font-bold grid mb-0">
           <Link
-            href="#masaza"
+            href="#pocetna"
             className=" font-bold text-gradient no-underline "
           >
             <Image src="/logo.png" width={150} height={100} alt="logo" />
@@ -81,6 +81,12 @@ export default function Navbar() {
             href="#cjenik"
           >
             Cjenik
+          </Link>
+          <Link
+            className="transition font-bold no-underline text-black text-sm md:text-base gradient-hover-text"
+            href="#pitanja"
+          >
+            FAQ
           </Link>
           <Link
             className="transition font-bold no-underline text-black text-sm md:text-base gradient-hover-text"

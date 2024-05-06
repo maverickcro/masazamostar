@@ -4,7 +4,7 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function About() {
   useScrollAnimation("yearsCounter", 0, 5, 1500);
-  useScrollAnimation("clientsCounter", 0, 30, 1500);
+  useScrollAnimation("clientsCounter", 0, 50, 1500);
   return (
     <>
       <div className="flex flex-col justify-center items-center mt-20">
