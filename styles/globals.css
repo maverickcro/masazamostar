@@ -106,8 +106,8 @@ section {
 /* card */
 
 .card-shadow {
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  /* border: 1px solid black; */
   border-radius: 8px;
 }
 

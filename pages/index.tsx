@@ -4,6 +4,7 @@ import Usluge from "./components/Usluge";
 import About from "./components/About";
 import Cjenik from "./components/Cjenik";
 import FAQ from "./components/FAQ";
+import Kontakt from "./components/Kontakt";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export default function Home() {
         <FAQ />
       </section>
       <section className="six" id="kontakt">
-        Kontakt?
+        <Kontakt />
       </section>
     </main>
   );
