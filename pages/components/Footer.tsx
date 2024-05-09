@@ -36,7 +36,7 @@ export default function Footer() {
     <footer className="bg-white rounded-lg shadow px-6  m-4">
       <div className="w-full max-w-4xl mx-auto p-4 md:py-8 text-center">
         <div className="flex text-center justify-between">
-          <Image src="/logo.png" width={200} height={140} alt="logo" />
+          <Image src="/logo.png" width={140} height={140} alt="logo" />
           <Link
             href="#nula"
             className="space-x-3 rtl:space-x-reverse my-[auto] mx-0"

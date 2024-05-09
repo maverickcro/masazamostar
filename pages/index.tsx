@@ -16,7 +16,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className={`mx-auto ${inter.className}`}>
-      <section className="one" id="pocetna">
+      <section className="one section-helper" id="pocetna">
         <Hero />
       </section>
       <section className="two" id="o-meni">

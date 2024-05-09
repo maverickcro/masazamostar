@@ -2,12 +2,12 @@ import React from "react";
 
 function InfoCard() {
   return (
-    <div className="flex flex-col justify-center items-centerp-[20px] h-full">
+    <div className="px-2 lg:px-10 flex flex-col justify-center">
       <span className="text-gray-700">Tko sam ja?</span>
       <h1 className="text-4xl font-bold mb-6">
         Lorenco Perić - Dipl. fizioterapeut
       </h1>
-      <p className="text-base mb-6">
+      <p className="text-base text-gray-900 mb-6">
         Neka vaša briga o zdravlju počne kod mene. S godinama iskustva kao
         fizioterapeut, nudim masaže koje su prilagođene upravo vašim potrebama.
         Bilo da se oporavljate od ozljede, borite se sa stresom ili jednostavno
@@ -15,7 +15,7 @@ function InfoCard() {
       </p>
       <a
         href="#usluge"
-        className="card-shadow inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg gradient-pozadina hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+        className="card-shadow inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg gradient-pozadina hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 w-full md:w-[250px]"
       >
         Usluge
         <svg

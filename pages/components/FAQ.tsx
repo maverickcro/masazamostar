@@ -23,7 +23,7 @@ const AccordionItem = ({
         className="flex items-center justify-between bg-gray-200 pl-3 pr-2 py-3 w-full rounded text-gray-600 font-bold cursor-pointer hover:bg-gray-300"
         onClick={toggleAccordion}
       >
-        {title}
+        <h3>{title}</h3>
         <span className="h-6 w-6 flex items-center justify-center ">
           <svg className="w-4 h-4" viewBox="0 0 20 20">
             <defs>
@@ -59,15 +59,15 @@ const AccordionItem = ({
 export default function FAQ() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-4">
         <span className="text-gray-600 font-bold">FAQ</span>
         <h2 className="text-3xl font-bold my-3 pb-4 bg-gradient-to-r from-[#e66465] to-[#9198e5] bg-[length:60%_6px] bg-no-repeat bg-bottom">
           Često Postavljena Pitanja
         </h2>
       </div>
-      <div className="max-w-[1280px] w-[80%] px-4 pb-8 mx-auto py-8 flex-container">
-        <div className="w-[80%] bg-transparent mx-auto p-6">
-          <div className="bg-transparent mx-auto p-6">
+      <div className="max-w-[1280px] w-full md:w-[80%] px-2 py-8">
+        <div className=" bg-transparent">
+          <div className="bg-transparent">
             <AccordionItem
               title="Koja je razlika klasične i relaksirajuće masaže?"
               first={true}
@@ -117,6 +117,19 @@ export default function FAQ() {
                 stres, možda će biti korisno povećati frekvenciju na jednom
                 tjedno ili svake dvije sedmice. U svakom slučaju, javite mi se
                 za konzultacije.
+              </p>
+            </AccordionItem>
+            <AccordionItem
+              title="Što je elektropunkcija i za što mi treba?"
+              first={false}
+            >
+              <p className="text-gray-600 mb-3">
+                Elektropunkcija je metoda gdje se iglom penetrira kroz kožu u
+                bolni dio kako bi se tretiralo s ciljem analgetskog djelovanja.
+                Pomaže u smanjenju bolova i poboljšanju cirkulacije, što dovodi
+                do bržeg oporavka mišića i općeg poboljšanja fizičkog stanja.
+                Preporučujem osobama s kroničnim bolovima ili sportskim
+                ozljedama.
               </p>
             </AccordionItem>
           </div>

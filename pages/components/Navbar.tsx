@@ -48,10 +48,7 @@ export default function Navbar() {
   useSmoothScroll();
   return (
     <nav
-      className={`px-6 fixed top-0 left-0 right-0 drop-shadow-md z-10 transition-all duration-300 ease-in-out ${
-        shrink
-          ? "bg-white dark:bg-slate-900 h-12 md:h-16"
-          : "bg-white dark:bg-slate-900 py-2 md:py-7 h-20 md:h-24"
+      className={`px-6 fixed top-0 left-0 right-0 drop-shadow-md z-10 transition-all duration-300 ease-in-out bg-white py-2 md:py-7 h-20 md:h-24"
       }`}
     >
       <div className="prose max-w-4xl prose-xl mx-auto flex flex-col md:flex-row justify-between items-center h-[100%]">

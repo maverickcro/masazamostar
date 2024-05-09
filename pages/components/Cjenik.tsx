@@ -3,25 +3,25 @@ import SkupSlika from "./SkupSlika";
 export default function Cjenik() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-4">
         <span className="text-gray-600 font-bold">CJENIK</span>
         <h2 className="text-3xl font-bold my-3 pb-4 bg-gradient-to-r from-[#e66465] to-[#9198e5] bg-[length:60%_6px] bg-no-repeat bg-bottom">
           Koliko To Košta?
         </h2>
       </div>
-      <div className="grid max-w-[1280px] px-4 pb-8 mx-auto lg:gap-8 py-8 lg:grid-cols-12 flex-container">
-        <div className="lg:col-span-6">
-          <div className="relative overflow-x-auto">
-            <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
+      <div className="max-w-[1280px] py-8 flex flex-col md:flex-row">
+        <div className="mx-4 mb-6 md:mb-0">
+          <div className="relative flex flex-col">
+            <table className="w-full text-sm text-gray-500 mb-6 text-left">
               <thead className="text-xs text-white uppercase bg-gradient-to-r from-[#e66465] to-[#9198e5] ">
                 <tr>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="px-4 py-3">
                     Vrsta masaže
                   </th>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="px-4 py-3">
                     Trajanje
                   </th>
-                  <th scope="col" className="px-6 py-3">
+                  <th scope="col" className="px-4 py-3">
                     Cijena
                   </th>
                 </tr>
@@ -30,72 +30,72 @@ export default function Cjenik() {
                 <tr className="bg-white border-b">
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
                     Klasična - Parcijalna
                   </th>
-                  <td className="px-6 py-4">40 min</td>
-                  <td className="px-6 py-4">40 KM</td>
+                  <td className="px-4 py-4">40 min</td>
+                  <td className="px-4 py-4">40 KM</td>
                 </tr>
                 <tr className="bg-white border-b ">
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
                     Klasična - Full Body
                   </th>
-                  <td className="px-6 py-4">60 min</td>
-                  <td className="px-6 py-4">50 KM</td>
+                  <td className="px-4 py-4">60 min</td>
+                  <td className="px-4 py-4">50 KM</td>
                 </tr>
                 <tr className="bg-white border-b ">
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
                     Sportska
                   </th>
-                  <td className="px-6 py-4">60 min</td>
-                  <td className="px-6 py-4">60 KM</td>
+                  <td className="px-4 py-4">60 min</td>
+                  <td className="px-4 py-4">60 KM</td>
                 </tr>
                 <tr className="bg-white border-b">
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
                     Relax/Opuštajuća
                   </th>
-                  <td className="px-6 py-4">60 min</td>
-                  <td className="px-6 py-4">40 KM</td>
+                  <td className="px-4 py-4">60 min</td>
+                  <td className="px-4 py-4">40 KM</td>
                 </tr>
                 <tr className="bg-white border-b">
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
                     Limfna Drenaža
                   </th>
-                  <td className="px-6 py-4">Tretman</td>
-                  <td className="px-6 py-4">60 KM</td>
+                  <td className="px-4 py-4">Tretman</td>
+                  <td className="px-4 py-4">60 KM</td>
                 </tr>
                 <tr className="bg-white border-b">
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
                     Elektropunkcija
                   </th>
-                  <td className="px-6 py-4">Tretman</td>
-                  <td className="px-6 py-4">30 KM</td>
+                  <td className="px-4 py-4">Tretman</td>
+                  <td className="px-4 py-4">30 KM</td>
                 </tr>
                 <tr className="bg-white">
                   <th
                     scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                     colSpan={2}
                   >
                     *Dolazak na Adresu - Mostar i Okolica
                   </th>
-                  <td className="px-6 py-4">20 KM</td>
+                  <td className="px-4 py-4">20 KM</td>
                 </tr>
               </tbody>
             </table>
@@ -105,7 +105,7 @@ export default function Cjenik() {
             </span>
             <a
               href="#kontakt"
-              className="card-shadow inline-flex items-center justify-center px-5 py-3 mr-3 mt-2 w-[200px] text-base font-medium text-center text-white rounded-lg gradient-pozadina hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="card-shadow inline-flex items-center justify-center px-5 py-3 mr-3 mt-2 text-base font-medium text-center text-white rounded-lg gradient-pozadina hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900  w-full md:w-[250px]"
             >
               Kontakt
               <svg
@@ -123,7 +123,7 @@ export default function Cjenik() {
             </a>
           </div>
         </div>
-        <div className="lg:col-span-6">
+        <div className="mx-4 mb-6 md:mb-0">
           <SkupSlika />
         </div>
       </div>

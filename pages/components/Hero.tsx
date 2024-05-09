@@ -2,18 +2,30 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="grid max-w-[1280px] px-4 pt-0 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-      <div className="mr-auto px-16 place-self-center lg:col-span-7">
+    <div className="max-w-[1280px] px-4 pb-8 mx-auto flex flex-col md:flex-row">
+      <div className="img-container  mt-0 mb-10 md:mb-0 lg:flex md:order-2">
+        <div className="background"></div>
+        <Image
+          src="/slika1.jpg"
+          alt="Masaza Mostar"
+          width={450}
+          height={450}
+          style={{ objectFit: "cover" }}
+          className="custom-img"
+        />
+      </div>
+      <div className="px-2 lg:px-10 flex flex-col justify-center items-start">
+        <span className="text-gray-800 ml-1">Dobrodošli</span>
         <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-black">
           Budite Najbolja Verzija Sebe
         </h1>
-        <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+        <p className="max-w-2xl mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
           Masaža nije luksuz, već ključna aktivnost za relaksaciju, oslobađanje
           od stresa i boli. Prepustite se iskusnim rukama i osjetite razliku.
         </p>
         <a
           href="#kontakt"
-          className="card-shadow inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg gradient-pozadina hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          className="card-shadow inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg gradient-pozadina hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 w-full md:w-[250px]"
         >
           Kontakt
           <svg
@@ -29,19 +41,6 @@ export default function Hero() {
             ></path>
           </svg>
         </a>
-      </div>
-      <div className="img-container lg:mt-0 lg:col-span-5 lg:flex">
-        <div className="background"></div>
-        <Image
-          src="/slika1.jpg"
-          alt="Masaza Mostar"
-          width={450}
-          height={450}
-          style={{
-            objectFit: "cover",
-          }}
-          className="custom-img"
-        />
       </div>
     </div>
   );
