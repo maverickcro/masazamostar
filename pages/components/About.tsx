@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import InfoCard from "./InfoCard";
 import useScrollAnimation from "../hooks/useScrollAnimation";
@@ -5,6 +6,50 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 export default function About() {
   useScrollAnimation("yearsCounter", 0, 5, 1500);
   useScrollAnimation("clientsCounter", 0, 50, 1500);
+
+  const imageContainerRef = useRef<HTMLDivElement>(null);
+  const listItemsRef = useRef<(HTMLLIElement | null)[]>([]);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === imageContainerRef.current) {
+            entry.target.classList.add("slide-in-from-bottom");
+          } else {
+            entry.target.classList.add("slide-in-from-right");
+          }
+        }
+      });
+    }, observerOptions);
+
+    if (imageContainerRef.current) {
+      observer.observe(imageContainerRef.current);
+    }
+
+    listItemsRef.current.forEach((item, index) => {
+      if (item) {
+        item.classList.add(`delay-${index + 1}`);
+        observer.observe(item);
+      }
+    });
+
+    return () => {
+      if (imageContainerRef.current) {
+        observer.unobserve(imageContainerRef.current);
+      }
+      listItemsRef.current.forEach((item) => {
+        if (item) {
+          observer.unobserve(item);
+        }
+      });
+    };
+  }, []);
+
   return (
     <>
       <div className="flex flex-col justify-center items-center mt-4">
@@ -17,7 +62,10 @@ export default function About() {
         <div className="w-full md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
           <InfoCard />
         </div>
-        <div className="w-full md:w-1/2 lg:w-1/3 mb-6 md:mb-0 flex flex-col justify-center items-center">
+        <div
+          className="w-full md:w-1/2 lg:w-1/3 mb-6 md:mb-0 flex flex-col justify-center items-center"
+          ref={imageContainerRef}
+        >
           <Image
             src="/lorenco.png"
             alt="Lorenco"
@@ -58,24 +106,20 @@ export default function About() {
             className="flex-grow flex-shrink custom-list"
             style={{ height: "66.66%" }}
           >
-            <li className="flex items-center space-x-2">
-              <span>
-                Širok spektar tehnika masaže. Svaka sesija je prilagođena da
-                odgovara vašim specifičnim potrebama.
-              </span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <span>
-                Znanje koristim kako bih pružio najbolju moguću njegu, uvijek s
-                ljubavlju prema onome što radim.
-              </span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <span>
-                Kontinuirano se usavršavam u području fizioterapije što je
-                rezultiralo s nizom profesionalnih certifikata.
-              </span>
-            </li>
+            {[
+              "Širok spektar tehnika masaže. Svaka sesija je prilagođena da odgovara vašim specifičnim potrebama.",
+              "Znanje koristim kako bih pružio najbolju moguću njegu, uvijek s ljubavlju prema onome što radim.",
+              "Kontinuirano se usavršavam u području fizioterapije što je rezultiralo s nizom profesionalnih certifikata.",
+            ].map((text, index) => (
+              <li
+                key={index}
+                ref={(el: any) => (listItemsRef.current[index] = el)}
+                className="flex items-center space-x-2 slide-in-from-right"
+                style={{ opacity: 0 }}
+              >
+                <span>{text}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
