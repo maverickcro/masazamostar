@@ -7,7 +7,7 @@ export default function About() {
   useScrollAnimation("clientsCounter", 0, 50, 1500);
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-4">
         <span className="text-gray-600 font-bold">O MENI</span>
         <h2 className="text-3xl font-bold my-3 pb-4 bg-gradient-to-r from-[#e66465] to-[#9198e5] bg-[length:60%_6px] bg-no-repeat bg-bottom">
           Upoznajmo Se
@@ -27,7 +27,7 @@ export default function About() {
             className="rounded-lg"
           />
           <span className="text-sm text-gray-600 italic">
-            &quot;Haha, Maka!&quot; - Lorenco, 2024
+            Lorenco Peric, 2024
           </span>
         </div>
         <div className="w-full md:w-full lg:w-1/3 mb-6 md:mb-0">

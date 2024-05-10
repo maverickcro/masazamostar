@@ -1,23 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import ToggleMode from "./ToggleMode";
 
 export default function Navbar() {
-  const [shrink, setShrink] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShrink(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const useSmoothScroll = () => {
     useEffect(() => {
       const handleSmoothScroll = (e: any) => {
@@ -57,7 +43,7 @@ export default function Navbar() {
             href="#pocetna"
             className=" font-bold text-gradient no-underline "
           >
-            <Image src="/logo.png" width={150} height={100} alt="logo" />
+            <Image src="/logo.png" width={120} height={100} alt="logo" />
           </Link>
         </p>
         <div className="flex flex-row justify-center items-center sm:justify-evenly sm:items-center gap-4 text-base">
