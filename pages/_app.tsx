@@ -11,7 +11,7 @@ function App({ Component, pageProps }: AppProps) {
         </title>
         <meta
           name="description"
-          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene - Uskoro s Vama"
+          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene"
         />
         <meta
           property="og:title"
@@ -19,8 +19,26 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:description"
-          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene - Uskoro s Vama"
+          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene"
         />
+        <meta property="og:image" content="/slika1.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.masaza-mostar.com" />
+        <meta property="og:site_name" content="Masaža Mostar by Lorenco" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Masaža Mostar by Lorenco - Medicinska, Sportska i Opuštajuća Masaža"
+        />
+        <meta
+          name="twitter:description"
+          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene"
+        />
+        <meta name="twitter:image" content="/slika1.jpg" />
+        <meta property="og:locale" content="hr_HR" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <Component {...pageProps} />
     </>

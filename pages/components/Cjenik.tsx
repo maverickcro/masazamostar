@@ -1,6 +1,53 @@
 import SkupSlika from "./SkupSlika";
+import { useEffect, useRef } from "react";
 
 export default function Cjenik() {
+  const imageContainerRef = useRef<HTMLDivElement>(null);
+  const secondContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === imageContainerRef.current) {
+            entry.target.classList.add("slide-in-from-left");
+          } else {
+            entry.target.classList.add("slide-in-from-left");
+          }
+        }
+      });
+    }, observerOptions);
+
+    if (imageContainerRef.current) {
+      observer.observe(imageContainerRef.current);
+    }
+
+    const observer1 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === secondContainerRef.current) {
+            entry.target.classList.add("slide-in-from-right");
+          } else {
+            entry.target.classList.add("slide-in-from-right");
+          }
+        }
+      });
+    }, observerOptions);
+
+    if (secondContainerRef.current) {
+      observer1.observe(secondContainerRef.current);
+    }
+
+    return () => {
+      if ((secondContainerRef as any).current) {
+        observer1.unobserve((secondContainerRef as any).current);
+      }
+    };
+  }, []);
   return (
     <>
       <div className="flex flex-col justify-center items-center mt-4">
@@ -10,7 +57,7 @@ export default function Cjenik() {
         </h2>
       </div>
       <div className="max-w-[1280px] py-8 flex flex-col md:flex-row">
-        <div className="mx-4 mb-6 md:mb-0">
+        <div className="mx-4 mb-6 md:mb-0" ref={imageContainerRef}>
           <div className="relative flex flex-col">
             <table className="w-full text-sm text-gray-500 mb-6 text-left">
               <thead className="text-xs text-white uppercase bg-gradient-to-r from-[#e66465] to-[#9198e5] ">
@@ -123,7 +170,7 @@ export default function Cjenik() {
             </a>
           </div>
         </div>
-        <div className="mx-4 mb-6 md:mb-0">
+        <div className="mx-4 mb-6 md:mb-0" ref={secondContainerRef}>
           <SkupSlika />
         </div>
       </div>

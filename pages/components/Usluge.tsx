@@ -1,7 +1,36 @@
-import Card from "./Card";
+import { useEffect, useRef } from "react";
 import CardNew from "./CardNew";
 
 export default function Usluge() {
+  const imageContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === imageContainerRef.current) {
+            entry.target.classList.add("slide-in-from-bottom-slow");
+          } else {
+            entry.target.classList.add("slide-in-from-bottom-slow");
+          }
+        }
+      });
+    }, observerOptions);
+
+    if (imageContainerRef.current) {
+      observer.observe(imageContainerRef.current);
+    }
+
+    return () => {
+      if ((imageContainerRef as any).current) {
+        observer.unobserve((imageContainerRef as any).current);
+      }
+    };
+  }, []);
   return (
     <>
       <div className="flex flex-col justify-center items-center mt-4">
@@ -10,7 +39,10 @@ export default function Usluge() {
           Koje Masaže Nudim?
         </h2>
       </div>
-      <div className="max-w-[1280px] px-4 py-8 flex flex-wrap justify-center  items-stretch">
+      <div
+        className="max-w-[1280px] px-4 py-8 flex flex-wrap justify-center  items-stretch"
+        ref={imageContainerRef}
+      >
         <div className="w-full sm:w-1/2 lg:w-1/4 p-2">
           <CardNew
             title="Klasična masaža"

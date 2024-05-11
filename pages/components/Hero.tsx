@@ -31,7 +31,7 @@ export default function Hero() {
       </div>
       <div className="px-2 lg:px-10 flex flex-col justify-center items-start transition-opacity duration-500">
         <span
-          className={`text-gray-800 ml-1 ${
+          className={`text-gray-800 ${
             isLoaded ? "slide-in-from-bottom-slow" : "opacity-0"
           }`}
         >
@@ -42,7 +42,11 @@ export default function Hero() {
             isLoaded ? "slide-in-from-bottom" : "opacity-0"
           }`}
         >
-          Budite Najbolja Verzija Sebe
+          Budite{" "}
+          <span className=" bg-gradient-to-r from-[#e66465] to-[#9198e5] bg-[length:100%_6px] sm:bg-[length:100%_10px] bg-no-repeat bg-bottom">
+            Najbolja
+          </span>{" "}
+          Verzija Sebe
         </h1>
         <p
           className={`max-w-2xl mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 ${

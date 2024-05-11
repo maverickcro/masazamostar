@@ -1,12 +1,46 @@
+import { useEffect, useRef } from "react";
 import React from "react";
 
 function InfoCard() {
+  const imageContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === imageContainerRef.current) {
+            entry.target.classList.add("slide-in-from-left");
+          } else {
+            entry.target.classList.add("slide-in-from-right");
+          }
+        }
+      });
+    }, observerOptions);
+
+    if (imageContainerRef.current) {
+      observer.observe(imageContainerRef.current);
+    }
+
+    return () => {
+      if ((imageContainerRef as any).current) {
+        observer.unobserve((imageContainerRef as any).current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="px-2 lg:px-10 flex flex-col justify-center">
+    <div
+      className="px-2 lg:px-10 flex flex-col justify-center"
+      ref={imageContainerRef}
+    >
       <span className="text-gray-700">Tko sam ja?</span>
-      <h1 className="text-4xl font-bold mb-6">
+      <h2 className="text-4xl font-bold mb-6">
         Lorenco Perić - Dipl. fizioterapeut
-      </h1>
+      </h2>
       <p className="text-base text-gray-900 mb-6">
         Neka vaša briga o zdravlju počne kod mene. S godinama iskustva kao
         fizioterapeut, nudim masaže koje su prilagođene upravo vašim potrebama.

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 const AccordionItem = ({
   title,
   children,
@@ -57,6 +57,35 @@ const AccordionItem = ({
 };
 
 export default function FAQ() {
+  const imageContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === imageContainerRef.current) {
+            entry.target.classList.add("slide-in-from-bottom");
+          } else {
+            entry.target.classList.add("slide-in-from-bottom");
+          }
+        }
+      });
+    }, observerOptions);
+
+    if (imageContainerRef.current) {
+      observer.observe(imageContainerRef.current);
+    }
+
+    return () => {
+      if ((imageContainerRef as any).current) {
+        observer.unobserve((imageContainerRef as any).current);
+      }
+    };
+  }, []);
   return (
     <>
       <div className="flex flex-col justify-center items-center mt-4">
@@ -65,7 +94,10 @@ export default function FAQ() {
           Često Postavljena Pitanja
         </h2>
       </div>
-      <div className="max-w-[1280px] w-full md:w-[80%] px-2 py-8">
+      <div
+        className="max-w-[1280px] w-full md:w-[80%] px-2 py-8"
+        ref={imageContainerRef}
+      >
         <div className=" bg-transparent">
           <div className="bg-transparent">
             <AccordionItem

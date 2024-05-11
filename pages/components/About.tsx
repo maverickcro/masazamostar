@@ -39,10 +39,10 @@ export default function About() {
     });
 
     return () => {
-      if (imageContainerRef.current) {
-        observer.unobserve(imageContainerRef.current);
+      if ((imageContainerRef as any).current) {
+        observer.unobserve((imageContainerRef as any).current);
       }
-      listItemsRef.current.forEach((item) => {
+      (listItemsRef as any).current.forEach((item: any) => {
         if (item) {
           observer.unobserve(item);
         }

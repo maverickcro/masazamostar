@@ -12,7 +12,7 @@ export default function CardNew(props: any) {
           objectFit="cover"
         />
       </div>
-      <div className="px-2 md:px-4 py-2 mb-auto">
+      <div className="p-4 md:p-6 mb-auto">
         <h3 className="text-2xl font-bold inline-block mb-2">{props.title}</h3>
         <p className="text-gray-500 text-base">{props.description}</p>
       </div>
