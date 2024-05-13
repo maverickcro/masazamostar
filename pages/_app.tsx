@@ -11,7 +11,7 @@ function App({ Component, pageProps }: AppProps) {
         </title>
         <meta
           name="description"
-          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene"
+          content="Fizioterapeut Lorenco Perić - ⭐⭐⭐⭐⭐ - Stručne usluge za opuštanje, terapiju i rehabilitaciju - Za Muškarce i Žene - +387 63 117 536 - Relax - Pristupačna Cijena"
         />
         <meta
           property="og:title"
@@ -19,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:description"
-          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene"
+          content="Fizioterapeut Lorenco Perić - ⭐⭐⭐⭐⭐ - Stručne usluge za opuštanje, terapiju i rehabilitaciju - Za Muškarce i Žene - +387 63 117 536 - Relax - Pristupačna Cijena"
         />
         <meta property="og:image" content="/slika1.jpg" />
         <meta property="og:type" content="website" />
@@ -33,7 +33,7 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta
           name="twitter:description"
-          content="Premium Usluge Masaže - Mostar - Za Muškarce i Žene"
+          content="Fizioterapeut Lorenco Perić - ⭐⭐⭐⭐⭐ - Stručne usluge za opuštanje, terapiju i rehabilitaciju - Za Muškarce i Žene - +387 63 117 536 - Relax - Pristupačna Cijena"
         />
         <meta name="twitter:image" content="/slika1.jpg" />
         <meta property="og:locale" content="hr_HR" />
