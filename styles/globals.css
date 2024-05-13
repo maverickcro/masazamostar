@@ -56,11 +56,14 @@ body {
 
 section {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* color: white; */
+}
+
+.min-height {
+  min-height: 100vh;
 }
 
 .section-helper {
