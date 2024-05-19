@@ -60,7 +60,10 @@ export default function Footer() {
         <hr className="my-6 border-gray-400 sm:mx-auto lg:my-8" />
         <span className="block text-sm text-black sm:text-center dark:text-gray-400">
           © 2024{" "}
-          <Link href="https://www.calorie-pal.com/" className="hover:underline">
+          <Link
+            href="https://www.linkedin.com/in/marko-stjepanovic-163574151/"
+            className="hover:underline"
+          >
             MaverickDesign
           </Link>
         </span>
