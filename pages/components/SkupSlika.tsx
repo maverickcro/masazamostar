@@ -15,7 +15,8 @@ export default function SkupSlika() {
             width={300}
             height={400}
             className="rounded-tl-[50px]"
-            style={{ objectFit: "cover", width: "100%" }}
+            objectFit={"cover"}
+            style={{ width: "100%" }}
           />
           <div className="w-20 h-20 mt-2 bg-gradient-to-tr from-[#e66465] to-[#9198e5] rounded-bl-[50px]"></div>
         </div>
@@ -32,7 +33,7 @@ export default function SkupSlika() {
             width={300}
             height={400}
             className="rounded-br-[50px]"
-            style={{ objectFit: "cover" }}
+            objectFit={"cover"}
           />
         </div>
       </div>

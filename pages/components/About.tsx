@@ -71,7 +71,7 @@ export default function About() {
             alt="Lorenco"
             height={350}
             width={350}
-            style={{ objectFit: "cover" }}
+            objectFit={"cover"}
             className="rounded-lg"
           />
           <span className="text-sm text-gray-600 italic">

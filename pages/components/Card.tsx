@@ -13,7 +13,8 @@ export default function Card(props: any) {
           alt={props.alt}
           width={350}
           height={350}
-          style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          objectFit={"cover"}
+          style={{ width: "100%", height: "100%" }}
         />
       </div>
       <div className="p-5">

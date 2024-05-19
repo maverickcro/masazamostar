@@ -8,15 +8,14 @@ export default function Kontakt() {
         <h2 className="text-3xl font-bold my-3 pb-4 bg-gradient-to-r from-[#e66465] to-[#9198e5] bg-[length:60%_6px] bg-no-repeat bg-bottom">
           Rezervirajte Masažu Danas
         </h2>
-        <span className="text-gray-600 font-bold m-4">
-          Javite mi se direktno pozivom na broj, Whatsapp-om ili preko kontakt
-          forme.
+        <span className="text-gray-600 font-bold m-4 italic">
+          Javite mi se direktno pozivom na broj ili Whatsapp porukom.
         </span>
       </div>
-      <div className="max-w-[960px] w-full px-4 pb-8 py-8 flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 flex justify-center items-center">
+      <div className="max-w-[960px] w-full justify-center px-4 pb-8 py-8 flex flex-col md:flex-row">
+        <div className="w-full md:w-[80%] flex justify-center items-center">
           <ul className="mb-6">
-            <li className="flex items-start justify-start">
+            <li className="flex items-start justify-start contact-list-no-border">
               <div className="flex h-10 w-10 items-center justify-center rounded bg-gradient-to-bl from-[#e66465] to-[#9198e5] text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +47,7 @@ export default function Kontakt() {
                 href="tel:+38763117536"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start justify-start"
+                className="flex items-start justify-start contact-list"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded bg-gradient-to-bl from-[#e66465] to-[#9198e5] text-white">
                   <svg
@@ -83,7 +82,7 @@ export default function Kontakt() {
                 href="https://wa.me/38763117536"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start justify-start"
+                className="flex items-start justify-start contact-list"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded bg-gradient-to-bl from-[#e66465] to-[#9198e5] text-white">
                   <svg
@@ -109,7 +108,7 @@ export default function Kontakt() {
             </li>
           </ul>
         </div>
-        <div
+        {/* <div
           className="w-full md:w-1/2 p-6 flex flex-col items-center justify-center "
           id="form"
         >
@@ -175,7 +174,7 @@ export default function Kontakt() {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
     </>
   );

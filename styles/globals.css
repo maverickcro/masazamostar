@@ -403,3 +403,17 @@ section {
     width: 60%; /* Adjust this value based on the desired length */
   }
 }
+
+.contact-list {
+  padding: 15px 10px 0px 10px;
+  margin: 15px 0 5px 0;
+  border-image: linear-gradient(#cc525d, #6e78ce) 20;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.contact-list-no-border {
+  padding: 15px 10px 0px 10px;
+  margin: 15px 0 5px 0;
+}
