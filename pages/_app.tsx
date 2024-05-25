@@ -8,7 +8,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>
-          Masaža Mostar by Lorenco - Medicinska, Sportska i Opuštajuća Masaža
+          Masaža Mostar by Lorenco - Klasična, Sportska i Opuštajuća Masaža
         </title>
         <meta
           name="description"
@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:title"
-          content="Masaža Mostar by Lorenco - Medicinska, Sportska i Opuštajuća Masaža"
+          content="Masaža Mostar by Lorenco - Klasična, Sportska i Opuštajuća Masaža"
         />
         <meta
           property="og:description"
@@ -30,7 +30,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Masaža Mostar by Lorenco - Medicinska, Sportska i Opuštajuća Masaža"
+          content="Masaža Mostar by Lorenco - Klasična, Sportska i Opuštajuća Masaža"
         />
         <meta
           name="twitter:description"
