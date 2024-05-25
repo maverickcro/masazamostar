@@ -118,7 +118,6 @@ section {
   height: auto;
   display: block;
   border-radius: 25px 25px 25px 150px;
-  border: 2px solid black;
   z-index: 1;
 }
 
