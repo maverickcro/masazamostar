@@ -9,7 +9,7 @@ export default function Kontakt() {
           Rezervirajte Masažu Danas
         </h2>
         <span className="text-gray-600 font-bold m-4 italic">
-          Javite mi se direktno pozivom na broj ili Whatsapp porukom.
+          Javite mi se direktno pozivom na broj, SMS-om ili Whatsapp porukom.
         </span>
       </div>
       <div className="max-w-[960px] w-full justify-center px-4 pb-8 py-8 flex flex-col md:flex-row">

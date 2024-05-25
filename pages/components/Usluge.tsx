@@ -43,40 +43,31 @@ export default function Usluge() {
         className="max-w-[1280px] px-4 py-8 flex flex-wrap justify-center  items-stretch"
         ref={imageContainerRef}
       >
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2">
-          <CardNew
-            title="Klasična masaža"
-            description="Cilj joj je opuštanje mišića i poboljšanje cirkulacije krvi kroz niz glađenja, gnječenja i tapkanja. Efikasno smanjuje stres i unaprjeđuje opće psihofizičko stanje."
-            src="slika5.jpg"
-            alt="Klasična Masaza Mostar"
-            intensity="Balansirana"
-          />
-        </div>
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2">
-          <CardNew
-            title="Medicinska masaža"
-            description="Fokusira se na liječenje specifičnih zdravstvenih stanja, poput kroničnih bolova ili sportskih ozljeda. Poboljšava cirkulaciju i olakšava oporavak."
-            src="slika1.jpg"
-            alt="Medicinska Masaza Mostar"
-            intensity="Jaka"
-          />
-        </div>
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2">
-          <CardNew
-            title="Sportska masaža"
-            description="Dizajnirana za sportaše i aktivne osobe. Pomaže u prevenciji ozljeda, smanjuje mišićnu napetost i poboljšava fleksibilnost."
-            src="slika3.jpg"
-            alt="Sportska Masaza Mostar"
-            intensity="Jaka"
-          />
-        </div>
-        <div className="w-full sm:w-1/2 lg:w-1/4 p-2">
+        <div className="w-full sm:w-1/2 lg:w-1/3 p-2">
           <CardNew
             title="Opuštajuća masaža"
             description="Savršen način za smanjenje stresa i revitalizaciju tijela i uma. Kroz lagane i umirujuće pokrete, ova masaža opušta mišiće, poboljšava raspoloženje i potiče opću dobrobit."
             src="slika2.jpg"
             alt="Opuštajuća Masaza Mostar"
             intensity="Lagana"
+          />
+        </div>
+        <div className="w-full sm:w-1/2 lg:w-1/3 p-2">
+          <CardNew
+            title="Klasična masaža"
+            description="Cilj joj je opuštanje mišića i poboljšanje cirkulacije krvi kroz niz glađenja, gnječenja i tapkanja. Efikasno smanjuje stres i unaprjeđuje opće psihofizičko stanje."
+            src="slika4.jpg"
+            alt="Klasična Masaza Mostar"
+            intensity="Balansirana"
+          />
+        </div>
+        <div className="w-full sm:w-1/2 lg:w-1/3 p-2">
+          <CardNew
+            title="Sportska masaža"
+            description="Dizajnirana za sportaše i aktivne osobe. Pomaže u prevenciji ozljeda, smanjuje mišićnu napetost i poboljšava fleksibilnost."
+            src="slika1.jpg"
+            alt="Sportska Masaza Mostar"
+            intensity="Jaka"
           />
         </div>
       </div>

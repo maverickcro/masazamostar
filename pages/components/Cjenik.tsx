@@ -79,9 +79,9 @@ export default function Cjenik() {
                     scope="row"
                     className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
-                    Klasična - Parcijalna
+                    Relax/Opuštajuća
                   </th>
-                  <td className="px-4 py-4">40 min</td>
+                  <td className="px-4 py-4">60 min</td>
                   <td className="px-4 py-4">40 KM</td>
                 </tr>
                 <tr className="bg-white border-b ">
@@ -89,7 +89,7 @@ export default function Cjenik() {
                     scope="row"
                     className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
-                    Klasična - Full Body
+                    Klasična
                   </th>
                   <td className="px-4 py-4">60 min</td>
                   <td className="px-4 py-4">50 KM</td>
@@ -104,16 +104,7 @@ export default function Cjenik() {
                   <td className="px-4 py-4">60 min</td>
                   <td className="px-4 py-4">60 KM</td>
                 </tr>
-                <tr className="bg-white border-b">
-                  <th
-                    scope="row"
-                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    Relax/Opuštajuća
-                  </th>
-                  <td className="px-4 py-4">60 min</td>
-                  <td className="px-4 py-4">40 KM</td>
-                </tr>
+
                 <tr className="bg-white border-b">
                   <th
                     scope="row"
@@ -129,10 +120,10 @@ export default function Cjenik() {
                     scope="row"
                     className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                   >
-                    Elektropunkcija
+                    *Elektropunkcija
                   </th>
                   <td className="px-4 py-4">Tretman</td>
-                  <td className="px-4 py-4">30 KM</td>
+                  <td className="px-4 py-4">20 KM</td>
                 </tr>
                 <tr className="bg-white">
                   <th
@@ -140,14 +131,17 @@ export default function Cjenik() {
                     className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
                     colSpan={2}
                   >
-                    *Dolazak na Adresu - Mostar i Okolica
+                    **Dolazak na Adresu - Mostar i Okolica
                   </th>
-                  <td className="px-4 py-4">20 KM</td>
+                  <td className="px-4 py-4">Po dogovoru</td>
                 </tr>
               </tbody>
             </table>
-            <span className="text-sm text-gray-600 italic">
-              *Imam svoj prostor za masažu. U slučaju da želite da dođem na
+            <span className="text-sm text-gray-600 italic my-2">
+              *Dodatno uz masažu.
+            </span>
+            <span className="text-sm text-gray-600 italic my-2">
+              **Imam svoj prostor za masažu. U slučaju da želite da dođem na
               adresu to se naplaćuje dodatno.
             </span>
             <a
