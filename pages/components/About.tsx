@@ -68,7 +68,7 @@ export default function About() {
         >
           <Image
             src="/lorenco.png"
-            alt="Lorenco"
+            alt="Masaža Mostar za Muškarce i Žene"
             height={350}
             width={350}
             objectFit={"cover"}
