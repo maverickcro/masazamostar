@@ -56,7 +56,7 @@ export default function Cjenik() {
           Koliko To Košta?
         </h2>
       </div>
-      <div className="max-w-[1280px] py-8 flex flex-col md:flex-row">
+      <div className="max-w-[1280px] py-8 flex justify-center items-center flex-col md:flex-row">
         <div className="mx-4 mb-6 md:mb-0" ref={imageContainerRef}>
           <div className="relative flex flex-col">
             <table className="w-full text-sm text-gray-500 mb-6 text-left">
@@ -125,24 +125,10 @@ export default function Cjenik() {
                   <td className="px-4 py-4">Tretman</td>
                   <td className="px-4 py-4">20 KM</td>
                 </tr>
-                <tr className="bg-white">
-                  <th
-                    scope="row"
-                    className="px-4 py-4 font-medium text-gray-900 whitespace-nowrap"
-                    colSpan={2}
-                  >
-                    **Dolazak na Adresu - Mostar i Okolica
-                  </th>
-                  <td className="px-4 py-4">Po dogovoru</td>
-                </tr>
               </tbody>
             </table>
-            <span className="text-sm text-gray-600 italic my-2">
-              *Dodatno uz masažu.
-            </span>
-            <span className="text-sm text-gray-600 italic my-2">
-              **Imam svoj prostor za masažu. U slučaju da želite da dođem na
-              adresu to se naplaćuje dodatno.
+            <span className="text-sm text-gray-600 italic m-2">
+              *Nadoplata uz masažu.
             </span>
             <a
               href="#kontakt"
@@ -150,7 +136,7 @@ export default function Cjenik() {
             >
               Kontakt
               <svg
-                className="w-5 h-5 ml-2 -mr-1"
+                className="w-7 h-5 ml-2 -mr-1"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

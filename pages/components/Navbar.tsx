@@ -69,7 +69,7 @@ export default function Navbar() {
             className="transition font-bold no-underline text-black text-sm md:text-base gradient-hover-text"
             href="#pitanja"
           >
-            FAQ
+            Pitanja
           </Link>
           <Link
             className="transition font-bold no-underline text-black text-sm md:text-base gradient-hover-text"

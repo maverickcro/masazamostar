@@ -5,7 +5,7 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function About() {
   useScrollAnimation("yearsCounter", 0, 5, 1500);
-  useScrollAnimation("clientsCounter", 0, 50, 1500);
+  useScrollAnimation("clientsCounter", 0, 60, 1500);
 
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const listItemsRef = useRef<(HTMLLIElement | null)[]>([]);
@@ -59,26 +59,10 @@ export default function About() {
         </h2>
       </div>
       <div className="max-w-[1280px] flex flex-col md:flex-row md:flex-wrap lg:flex-row w-full px-4 py-8 justify-center items-center">
-        <div className="w-full md:w-1/2 lg:w-1/3 mb-6 md:mb-0">
+        <div className="w-full md:w-1/2 mb-6 md:mb-0">
           <InfoCard />
         </div>
-        <div
-          className="w-full md:w-1/2 lg:w-1/3 mb-6 md:mb-0 flex flex-col justify-center items-center"
-          ref={imageContainerRef}
-        >
-          <Image
-            src="/lorenco.png"
-            alt="Masaža Mostar za Muškarce i Žene"
-            height={350}
-            width={350}
-            objectFit={"cover"}
-            className="rounded-lg"
-          />
-          <span className="text-sm text-gray-600 italic">
-            Lorenco Peric, 2024
-          </span>
-        </div>
-        <div className="w-full md:w-full lg:w-1/3 mb-6 md:mb-0">
+        <div className="w-full md:w-1/2 mb-6 md:mb-0">
           <div
             className="flex justify-center items-center p-4"
             style={{ height: "33.33%" }}
@@ -102,6 +86,7 @@ export default function About() {
               <span className="text-sm">Klijenata</span>
             </div>
           </div>
+
           <ul
             className="flex-grow flex-shrink custom-list"
             style={{ height: "66.66%" }}
@@ -110,6 +95,7 @@ export default function About() {
               "Širok spektar tehnika masaže. Svaka sesija je prilagođena da odgovara vašim specifičnim potrebama.",
               "Znanje koristim kako bih pružio najbolju moguću njegu, uvijek s ljubavlju prema onome što radim.",
               "Kontinuirano se usavršavam u području fizioterapije što je rezultiralo s nizom profesionalnih certifikata.",
+              "Većina mojih klijenata dolazi po preporuci, što potvrđuje kvalitetu mojih masaža.",
             ].map((text, index) => (
               <li
                 key={index}

@@ -48,7 +48,7 @@ export default function Usluge() {
             title="Opuštajuća masaža"
             description="Savršen način za smanjenje stresa i revitalizaciju tijela i uma. Kroz lagane i umirujuće pokrete, ova masaža opušta mišiće, poboljšava raspoloženje i potiče opću dobrobit."
             src="slika2.jpg"
-            alt="Opuštajuća Masaža Mostar za Muškarce i Žene"
+            alt="Opuštajuća Masaža Mostar za Muškarce i Žene Masaza Mostar"
             intensity="Lagana"
           />
         </div>
@@ -57,7 +57,7 @@ export default function Usluge() {
             title="Klasična masaža"
             description="Cilj joj je opuštanje mišića i poboljšanje cirkulacije krvi kroz niz glađenja, gnječenja i tapkanja. Efikasno smanjuje stres i unaprjeđuje opće psihofizičko stanje."
             src="slika4.jpg"
-            alt="Klasična Masaža Mostar za Muškarce i Žene"
+            alt="Klasična Masaža Mostar za Muškarce i Žene Masaza Mostar"
             intensity="Balansirana"
           />
         </div>
@@ -66,7 +66,7 @@ export default function Usluge() {
             title="Sportska masaža"
             description="Dizajnirana za sportaše i aktivne osobe. Pomaže u prevenciji ozljeda, smanjuje mišićnu napetost i poboljšava fleksibilnost."
             src="slika1.jpg"
-            alt="Sportska Masaža Mostar za Muškarce i Žene"
+            alt="Sportska Masaža Mostar za Muškarce i Žene Masaza Mostar"
             intensity="Jaka"
           />
         </div>

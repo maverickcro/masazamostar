@@ -11,7 +11,7 @@ export default function SkupSlika() {
         >
           <Image
             src="/slika4.jpg"
-            alt="Masaža Mostar za Muškarce i Žene"
+            alt="Masaža Mostar za Muškarce i Žene Masaza Mostar"
             width={300}
             height={400}
             className="rounded-tl-[50px]"
@@ -29,7 +29,7 @@ export default function SkupSlika() {
           <div className="w-20 h-20 mb-2 bg-gradient-to-bl from-[#e66465] to-[#9198e5] rounded-tr-[50px]"></div>
           <Image
             src="/slika5.jpg"
-            alt="Masaža Mostar za Muškarce i Žene"
+            alt="Masaža Mostar za Muškarce i Žene Masaza Mostar"
             width={300}
             height={400}
             className="rounded-br-[50px]"
