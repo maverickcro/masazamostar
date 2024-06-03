@@ -25,8 +25,7 @@ export default function Hero() {
           alt="Masaza Mostar"
           width={450}
           height={450}
-          objectFit={"cover"}
-          className="custom-img"
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className="px-2 lg:px-10 flex flex-col justify-center items-start transition-opacity duration-500">
