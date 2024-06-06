@@ -95,7 +95,6 @@ export default function About() {
               "Širok spektar tehnika masaže. Svaka sesija je prilagođena da odgovara vašim specifičnim potrebama.",
               "Znanje koristim kako bih pružio najbolju moguću njegu, uvijek s ljubavlju prema onome što radim.",
               "Kontinuirano se usavršavam u području fizioterapije što je rezultiralo s nizom profesionalnih certifikata.",
-              "Većina mojih klijenata dolazi po preporuci, što potvrđuje kvalitetu mojih masaža.",
             ].map((text, index) => (
               <li
                 key={index}

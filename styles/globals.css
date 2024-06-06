@@ -394,10 +394,6 @@ section {
   animation-delay: 1.6s;
 }
 
-.delay-4 {
-  animation-delay: 1.9s;
-}
-
 @keyframes underlineGradient {
   from {
     width: 0;
