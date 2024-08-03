@@ -5,7 +5,7 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function About() {
   useScrollAnimation("yearsCounter", 0, 5, 1500);
-  useScrollAnimation("clientsCounter", 0, 60, 1500);
+  useScrollAnimation("clientsCounter", 0, 150, 1500);
 
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const listItemsRef = useRef<(HTMLLIElement | null)[]>([]);
